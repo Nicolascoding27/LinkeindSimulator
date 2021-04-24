@@ -7,10 +7,13 @@
     text-align: center;
     height: fit-content;
     flex:0.2;
-    width: 35%;
+    width: 30%;
     .sidebar_top{
-        h4{
+        font-size: 20px;
+         h4{
             margin-bottom: 10px;
+            color: gray;
+            margin: 5px 10px;
         }
         display: flex;
         flex-direction: column;
@@ -18,9 +21,8 @@
         border: 1px solid lightgray;
         background-color: white;
         border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
         margin-bottom: 5px;
-
+        font-size: 12px; 
         i{
             font-size: 10vh;
         }
@@ -30,6 +32,7 @@
             height: 60px;
             height: 50px;
             object-fit: cover;
+            border-radius: 10px 10px 0px 0px;
 
         }
     }
@@ -44,9 +47,17 @@
        .sidebar_stat{
           margin-top: 10px; 
           display: flex;
-        //   flex-direction: column;
+          justify-content: space-around;
+          p{
+              color: gray;
+              font-size: 14px;
+              font-weight: 600;  
+          }
+          .sidebar_stats_number{
+              font-weight: bold;
+              color: #0a66c2;
 
-          justify-content: space-between;
+          }
           
        }
     }
