@@ -9,12 +9,12 @@
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  padding: 10px;
   z-index: 999;
   background-color: white;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 10px;
 }
 
 .header__logo__searchbox {
@@ -39,7 +39,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: gray;
+  color: black;
   background-color: #eef3f8;
   margin-top: 10px;
   border-radius: 5px;
@@ -57,15 +57,46 @@
   display: flex;
 }
 
+.header_right .headerOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  color: gray;
+  font-size: 14px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  white-space: nowrap;
+}
+
+.header_right .headerOption .headerOption__icon {
+  margin-right: 5px;
+  width: 20px;
+}
+
+.header_right .headerOption:hover {
+  color: black;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background-color: #f3f2ef;
 }
 /*# sourceMappingURL=style.css.map */
