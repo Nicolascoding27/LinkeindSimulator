@@ -4,10 +4,10 @@
     margin: 35px 35px 0px 35px;
     max-width: 1200px;
     flex-direction: column;
-    text-align: center;
     height: fit-content;
     flex:0.2;
     width: 30%;
+    text-align: center;
     .sidebar_top{
         font-size: 20px;
          h4{
@@ -60,5 +60,37 @@
           }
           
        }
+    }
+    .sidebar_bottom{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border:$border;
+        background: white;
+        margin-top: 10px;
+        .sidebar_bottom_recent{
+            text-align: left;
+            margin: 10px 10px;
+            
+        }
+        .sidebar_recentItems{
+            color: gray;
+            display: flex;
+            white-space: nowrap;
+            font-size: 12;
+            margin: 10px 2px;
+            margin-right: 100px;
+            .sidebar_hash{
+               margin-left: 5px;
+            }
+            &:hover{
+                cursor: pointer;
+                color: black;
+            }
+            p{
+                margin-left: 5px;
+                padding-bottom: 10px;
+            }
+        }
     }
 }
