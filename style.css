@@ -228,7 +228,7 @@
   -webkit-box-flex: 0.6;
       -ms-flex: 0.6;
           flex: 0.6;
-  margin: 0 20px;
+  margin: 35px 20px;
 }
 
 .feed .feed_input {
@@ -239,18 +239,38 @@
   color: gray;
 }
 
-.feed .feed_input form input {
+.feed .feed_input i {
+  font-size: 10vh;
+}
+
+.feed .feed_input button {
+  background: lightgray;
+  border: 1px solid gray;
+  border-radius: 35px;
+  width: 80%;
+  height: 50px;
+  text-align: left;
+  margin: 10px 10px;
+  padding-left: 20px;
+  color: gray;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.feed .feed_input button input {
   border: none;
   font-weight: 600;
   outline: none;
 }
 
+.feed .feed_input button:hover {
+  cursor: pointer;
+  color: black;
+}
+
 .feed .feed_input_container {
   background: white;
-  padding: 10px;
-  padding-bottom: 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .feed .feed_input_container_options {
@@ -259,6 +279,16 @@
   display: -ms-flexbox;
   display: flex;
   padding: 10px 10px;
+}
+
+.feed .feed_input_container_options .inputOption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .feed .feed_input_container_options h4 {

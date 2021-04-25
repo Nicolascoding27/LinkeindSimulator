@@ -1,26 +1,45 @@
 .feed{
     flex: 0.6;
-    margin: 0 20px;
+    margin: 35px 20px;
 .feed_input{
     display: flex;
     padding: 10px 10px;
     color: gray;
-    form{
+    i{
+        font-size: 10vh;
+    }
+    button{
+        background: lightgray;
+        border: 1px solid gray;
+        border-radius: 35px;
+        width: 80%;
+        height: 50px;
+        text-align: left;
+        margin:10px 10px;
+        padding-left: 20px;
+        color: gray;
+        transition: all 0.5s;
         input{
             border:none;
             font-weight: 600;
             outline: none;
         }
+        &:hover{
+            cursor: pointer;
+            color: black;
+        }
     }
 }
 .feed_input_container{
     background: white;
-    padding: 10px;
-    padding-bottom: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 .feed_input_container_options{
+    .inputOption{
+        display: flex;
+        padding: 20px 20px;
+        justify-content: flex-start;
+    }
     background: white;
     display:flex;
     padding: 10px 10px;
@@ -28,4 +47,6 @@
         color: gray;
     }
 }
+
 }
+
