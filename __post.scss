@@ -1,0 +1,44 @@
+#post{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-130%) scale(0);
+    border-radius: 10px; 
+    border: 1px solid gray;
+    z-index: 1000;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    .post_header{
+        padding:10PX 15PX;
+        display: flex ;
+        justify-content: space-between;
+        align-items:center;
+        border-bottom: 1px solid black;
+        .post_header_closeButton{
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    }
+}
+#post.active{
+    transform: translate(-50%,-130%) scale(1);
+}
+#overlay{
+    position: fixed;
+    // opacity: 0;
+    top: 0;
+    left: 0;;
+    right: 0;
+    bottom: 0;
+    background-color: #00000080;
+    pointer-events:none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
