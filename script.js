@@ -16,5 +16,5 @@ function openPost(post){
 function closePost(post){
     if(post==null)return
     post.classList.remove('active')//remove the class so we can't se the write a post section
-    overlay.classList.add('active')//take the variable overlay and remove the class so we dont see the overlay anymore
+    overlay.classList.remove('active')//take the variable overlay and remove the class so we dont see the overlay anymore
 }
