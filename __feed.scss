@@ -1,10 +1,11 @@
 .feed{
-    flex: 0.6;
+    flex: 0.55;
     margin: 35px 20px;
 .feed_input{
     display: flex;
     padding: 10px 10px;
     color: gray;
+    border-radius: 10px;
     i{
         font-size: 10vh;
     }
@@ -36,13 +37,17 @@
 }
 .feed_input_container_options{
     .inputOption{
+        color: gray;
         display: flex;
-        padding: 20px 20px;
         justify-content: flex-start;
+        &:hover{
+            cursor: pointer;
+        }
     }
     background: white;
     display:flex;
-    padding: 10px 10px;
+    justify-content: space-around;
+    padding: 10px 10px
     h4{
         color: gray;
     }

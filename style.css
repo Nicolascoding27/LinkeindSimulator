@@ -225,9 +225,9 @@
 }
 
 .feed {
-  -webkit-box-flex: 0.6;
-      -ms-flex: 0.6;
-          flex: 0.6;
+  -webkit-box-flex: 0.55;
+      -ms-flex: 0.55;
+          flex: 0.55;
   margin: 35px 20px;
 }
 
@@ -237,6 +237,7 @@
   display: flex;
   padding: 10px 10px;
   color: gray;
+  border-radius: 10px;
 }
 
 .feed .feed_input i {
@@ -278,21 +279,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 10px h4;
+  padding-color: gray;
 }
 
 .feed .feed_input_container_options .inputOption {
+  color: gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 20px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
 
-.feed .feed_input_container_options h4 {
-  color: gray;
+.feed .feed_input_container_options .inputOption:hover {
+  cursor: pointer;
 }
 
 * {
