@@ -9,7 +9,7 @@
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 999;
+  z-index: 998;
   background-color: white;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -317,8 +317,10 @@
   border: 1px solid gray;
   z-index: 1000;
   background-color: white;
-  width: 500px;
+  width: 600px;
   max-width: 80%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 #post .post_header {
@@ -332,7 +334,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
+}
+
+#post .post_header .post_header_title {
+  color: #7a7575;
+  font-size: 16px;
+  padding-left: 15px;
 }
 
 #post .post_header .post_header_closeButton {
@@ -340,7 +347,8 @@
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
+  color: #7a7575;
   font-weight: bold;
 }
 
@@ -351,6 +359,7 @@
 
 #overlay {
   position: fixed;
+  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -364,6 +373,7 @@
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 999;
 }
 
 * {

@@ -7,20 +7,26 @@
     border: 1px solid gray;
     z-index: 1000;
     background-color: white;
-    width: 500px;
+    width: 600px;
     max-width: 80%;
+    transition: all 0.2s;
     .post_header{
         padding:10PX 15PX;
         display: flex ;
         justify-content: space-between;
-        align-items:center;
-        border-bottom: 1px solid black;
+        align-items:center;;
+        .post_header_title{
+            color: $fonts;
+            font-size: 16px;
+            padding-left: 15px;
+        }
         .post_header_closeButton{
             cursor: pointer;
             border: none;
             outline: none;
             background: none;
-            font-size: 1.25rem;
+            font-size: 1.75rem;
+            color:$fonts;
             font-weight: bold;
         }
     }
@@ -30,7 +36,7 @@
 }
 #overlay{
     position: fixed;
-    // opacity: 0;
+    opacity: 0;
     top: 0;
     left: 0;;
     right: 0;
@@ -42,4 +48,5 @@
 #overlay.active{
     opacity: 1;
     pointer-events: all;
+    z-index: 999;
 }
