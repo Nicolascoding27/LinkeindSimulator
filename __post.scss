@@ -37,6 +37,7 @@
     bottom: 0;
     background-color: #00000080;
     pointer-events:none;
+    transition: all 0.2s;
 }
 #overlay.active{
     opacity: 1;
