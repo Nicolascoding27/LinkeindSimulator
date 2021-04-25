@@ -8,6 +8,14 @@ openButton.forEach(button=>{
         openPost(post)
     })
 })
+closeButton.forEach(button=>{
+    button.addEventListener('click',()=>{
+        //get the target from the data attribute in the html
+        const post=button.closest('.post')//check the parent if the class is post it chooses it, if it's not it will keep going until it finds something
+        //in this case button.closest is going to select the parent div with the class closest
+        closePost(post)
+    })
+})
 function openPost(post){
     if(post==null)return
     post.classList.add('active')//add the class so we can se the write a post section
