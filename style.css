@@ -72,9 +72,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 20px;
+  margin-right: 30px;
   color: gray;
-  font-size: 14px;
+  font-size: 12px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   white-space: nowrap;
@@ -235,7 +235,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 0px;
   color: gray;
   border-radius: 10px;
 }
@@ -271,22 +271,25 @@
 
 .feed .feed_input_container {
   background: white;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding-bottom: 10px;
 }
 
-.feed .feed_input_container_options {
+.feed .feed_input_container .feed_input_container_options {
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 10px 10px h4;
-  padding-color: gray;
 }
 
-.feed .feed_input_container_options .inputOption {
+.feed .feed_input_container .feed_input_container_options .inputOption {
+  padding-top: 10px;
+  width: 15%;
   color: gray;
+  margin-top: -15px;
+  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,8 +298,13 @@
           justify-content: flex-start;
 }
 
-.feed .feed_input_container_options .inputOption:hover {
+.feed .feed_input_container .feed_input_container_options .inputOption:hover {
   cursor: pointer;
+  background-color: lightgray;
+}
+
+.feed .feed_input_container .feed_input_container_options h4 {
+  color: gray;
 }
 
 * {
