@@ -1,4 +1,5 @@
 #post{
+    font-family: 'Roboto Mono', monospace;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -14,9 +15,10 @@
         padding:10PX 15PX;
         display: flex ;
         justify-content: space-between;
-        align-items:center;;
+        align-items:center;
         .post_header_title{
-            color: $fonts;
+            color: #3a3a3a;
+            font-family: 'Roboto Mono', monospace;
             font-size: 16px;
             padding-left: 15px;
         }
@@ -30,9 +32,49 @@
             font-weight: bold;
         }
     }
+    .post_body{
+        .post_body_header{
+            display:flex;
+            padding: 40px 30px;
+            font-size: 12px;
+            h2{
+                color:#3a3a3a;
+                font-size: 16px;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                color:$fonts; 
+                border:1px solid gray;
+                border-radius: 20px;
+                background-color: white;
+                padding:7px 7px;
+                width: 100%; 
+                i{
+                    font-size: 17px;
+                }
+                span{
+                    padding-left: 10px;
+                }              
+            }
+            .avatar{
+                font-size: 60px;
+            }
+        }
+    .post_textArea{
+        width: 100%;
+        border: none;
+        padding:0px 40px;
+        outline: none;
+        height: 150px;
+        color: $fonts;
+    }
+    }
 }
+
 #post.active{
-    transform: translate(-50%,-130%) scale(1);
+    transform: translate(-50%,-100%) scale(1);
 }
 #overlay{
     position: fixed;

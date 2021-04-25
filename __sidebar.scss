@@ -6,8 +6,6 @@
     flex-direction: column;
     height: fit-content;
     flex:0.2;
-    // width: 30%;
-
     text-align: center;
     .sidebar_top{
         font-size: 20px;
@@ -24,10 +22,12 @@
         border-top-left-radius: 10px;
         margin-bottom: 5px;
         font-size: 12px; 
-        i{
-            font-size: 10vh;
+        .profile{
+            border-radius: 75%;
+            width: 80px;
+            border: 2px solid white;
         }
-        img{
+        .profile_background{
             margin-bottom: -30px;
             width: 100%;
             height: 60px;

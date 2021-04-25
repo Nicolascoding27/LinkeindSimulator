@@ -1,3 +1,7 @@
+.small {
+  width: 10px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,11 +139,13 @@
   margin: 5px 10px;
 }
 
-.sidebar .sidebar_top i {
-  font-size: 10vh;
+.sidebar .sidebar_top .profile {
+  border-radius: 75%;
+  width: 80px;
+  border: 2px solid white;
 }
 
-.sidebar .sidebar_top img {
+.sidebar .sidebar_top .profile_background {
   margin-bottom: -30px;
   width: 100%;
   height: 60px;
@@ -308,6 +314,7 @@
 }
 
 #post {
+  font-family: 'Roboto Mono', monospace;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -337,7 +344,8 @@
 }
 
 #post .post_header .post_header_title {
-  color: #7a7575;
+  color: #3a3a3a;
+  font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   padding-left: 15px;
 }
@@ -352,9 +360,60 @@
   font-weight: bold;
 }
 
+#post .post_body .post_body_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 30px;
+  font-size: 12px;
+}
+
+#post .post_body .post_body_header h2 {
+  color: #3a3a3a;
+  font-size: 16px;
+}
+
+#post .post_body .post_body_header button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #7a7575;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: white;
+  padding: 7px 7px;
+  width: 100%;
+}
+
+#post .post_body .post_body_header button i {
+  font-size: 17px;
+}
+
+#post .post_body .post_body_header button span {
+  padding-left: 10px;
+}
+
+#post .post_body .post_body_header .avatar {
+  font-size: 60px;
+}
+
+#post .post_body .post_textArea {
+  width: 100%;
+  border: none;
+  padding: 0px 40px;
+  outline: none;
+  height: 150px;
+  color: #7a7575;
+}
+
 #post.active {
-  -webkit-transform: translate(-50%, -130%) scale(1);
-          transform: translate(-50%, -130%) scale(1);
+  -webkit-transform: translate(-50%, -100%) scale(1);
+          transform: translate(-50%, -100%) scale(1);
 }
 
 #overlay {
@@ -394,5 +453,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.profile {
+  border-radius: 75%;
+  width: 80px;
+  border: 2px solid white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    
     <title>LinkedIn simulator
     </title>
 </head>
@@ -44,8 +47,9 @@
                 <h3>Notifications</h3>
               </div>
               <div class="headerOption">
-                <i class="material-icons headerOption__icon"> account_circle </i>
-                <h3>Me</h3>
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQGiUeU8t3JLZg/profile-displayphoto-shrink_100_100/0/1617159919391?e=1625097600&v=beta&t=dPM5tr3xz1xIMt3nfNpIUHnJk-2o-ZZ0XMSObIavp5E" alt="" style="width: 30px; border-radius: none;
+                " class="profile small">
+                <h3 style="margin-top: -4px;display: flex;">Me <span><i class="material-icons">arrow_drop_down</i></span></h3>
               </div>
             </div>
         </nav>
@@ -59,8 +63,8 @@
        -->
       <div class="sidebar">
         <div class="sidebar_top">
-          <a href="./index.html"> <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="BackgoroundProfileImage" /> </a>  
-          <i class="material-icons sidebar__topAvatar"> account_circle </i>
+          <a href="./index.html"> <img class="profile_background"src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80" alt="BackgoroundProfileImage" /> </a>  
+          <img src="https://media-exp1.licdn.com/dms/image/C5603AQGiUeU8t3JLZg/profile-displayphoto-shrink_100_100/0/1617159919391?e=1625097600&v=beta&t=dPM5tr3xz1xIMt3nfNpIUHnJk-2o-ZZ0XMSObIavp5E" alt="" class="profile">
           <h2>Nicolas Diaz </h2>
           <h4>Full-stack Developer student at ProTalento® || Industrial engineering student || Entrepreneur || Passionate about tech and emerging technologies || Lifelong learner</h4>
         </div>
@@ -72,9 +76,9 @@
             </p>
         </div>
         <div class="sidebar_stat">
-          <p>Who viewed your profile</p>
+          <p>Who viewed your posts</p>
             <p class="sidebar_stats_number">
-              2830
+              200
             </p>
         </div>
       </div>
@@ -106,7 +110,7 @@
    <div class="feed">
       <div class="feed_input_container">
               <div class="feed_input">
-                <i class="material-icons sidebar__topAvatar"> account_circle </i>
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQGiUeU8t3JLZg/profile-displayphoto-shrink_100_100/0/1617159919391?e=1625097600&v=beta&t=dPM5tr3xz1xIMt3nfNpIUHnJk-2o-ZZ0XMSObIavp5E" alt="" class="profile main medium">
                 <button data-post-target="#post">
                   Start post
                 </button>
@@ -137,16 +141,27 @@
     </section>
       <!-- Write a post  page
        -->
-      <div class="post active" id="post">
+      <div class="post" id="post">
         <div class="post_header">
             <div class="post_header_title">
               <h2>Create a post</h2>
             </div>
             <button data-close-button class="post_header_closeButton">x</button>
         </div>
-          <div class="post_body">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum itaque voluptate ad dolorem laborum hic officia quibusdam harum, nobis eaque rerum quis placeat corrupti ducimus mollitia sint voluptatum ex nisi?</h2>
+        <div class="post_body">
+          <div class="post_body_header">
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQGiUeU8t3JLZg/profile-displayphoto-shrink_100_100/0/1617159919391?e=1625097600&v=beta&t=dPM5tr3xz1xIMt3nfNpIUHnJk-2o-ZZ0XMSObIavp5E" alt="" class="profile">
+            <div class="post_body_header_name">
+                <h2>Nicolas Diaz</h2>
+                <button class="post_body_header_public">
+                  <i class="material-icons">public</i>
+                <span>Anyone</span>  
+                  <i class="material-icons">arrow_drop_down</i>
+                </button>
+              </div>
           </div>
+          <textarea class="post_textArea"name="post" id="posts"cols="60" placeholder="What do you want to talk about?" ></textarea>
+        </div>
      </div>
      <div id="overlay"></div>
 </body>
